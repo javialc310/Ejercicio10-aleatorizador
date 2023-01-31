@@ -1,5 +1,6 @@
 package com.example.ejercicio10_aleatorizador.ejercicio10
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ejercicio10_aleatorizador.R
@@ -16,6 +17,14 @@ class Ciudad : AppCompatActivity() {
     }
 
     private fun botones(){
+        binding.entrar.setOnClickListener {
+            val intent = Intent(this, SiguienteEj::class.java)
+            startActivity(intent)
+        }
 
+        binding.continuar4.setOnClickListener {
+            val intent = Intent(this, Dado::class.java)
+            startActivity(intent)
+        }
     }
 }

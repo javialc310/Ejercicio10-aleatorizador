@@ -14,15 +14,14 @@ class Dado : AppCompatActivity() {
         binding = ActivityDadoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.imageButton.setOnClickListener {
-            cambioObjeto()
-//            when((1..4).random()){
-//                1->cambioObjeto()
-//                2->cambioCiudad()
-//                3->cambioMercader()
-//                4->cambioEnemigo()
-//            }
+            when((1..4).random()){
+                1->cambioObjeto()
+                2->cambioCiudad()
+                3->cambioMercader()
+                4->cambioEnemigo()
         }
     }
+}
 
     fun cambioObjeto(){
         val intent= Intent(this, Objeto::class.java)
