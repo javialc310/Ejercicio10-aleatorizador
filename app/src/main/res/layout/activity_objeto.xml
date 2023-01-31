@@ -7,16 +7,44 @@
     tools:context=".ejercicio10.Objeto">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imagenObjeto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="449dp"
         android:src="@drawable/espada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textoObjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has encontradp una espada. ¿Quieres cogerla?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenObjeto"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/recoger"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="recoger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/continuar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoObjeto" />
+
+    <Button
+        android:id="@+id/continuar1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoObjeto"
+        app:layout_constraintStart_toEndOf="@+id/recoger"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
