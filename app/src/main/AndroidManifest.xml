@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Ejercicio7PantallaClases"
         tools:targetApi="31">
         <activity
+            android:name=".ejercicio10.SiguienteEj"
+            android:exported="false" />
+        <activity
             android:name=".ejercicio10.Ciudad"
             android:exported="false">
             <meta-data
@@ -40,7 +43,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".ejercicio10.Dado"
             android:exported="false">

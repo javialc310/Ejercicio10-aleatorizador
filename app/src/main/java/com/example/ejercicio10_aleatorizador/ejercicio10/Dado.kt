@@ -1,5 +1,6 @@
 package com.example.ejercicio10_aleatorizador.ejercicio10
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,12 +14,13 @@ class Dado : AppCompatActivity() {
         binding = ActivityDadoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.imageButton.setOnClickListener {
-            when(Random.nextInt(1, 4)){
-                1->cambioObjeto()
-                2->cambioCiudad()
-                3->cambioMercader()
-                4->cambioEnemigo()
-            }
+            cambioObjeto()
+//            when((1..4).random()){
+//                1->cambioObjeto()
+//                2->cambioCiudad()
+//                3->cambioMercader()
+//                4->cambioEnemigo()
+//            }
         }
     }
 

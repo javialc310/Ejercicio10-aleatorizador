@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".ejercicio10.Enemigo">
 
+    <ImageView
+        android:id="@+id/imagenEnemigo"
+        android:layout_width="237dp"
+        android:layout_height="229dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/soul_of_cinder_2_2" />
+
+    <TextView
+        android:id="@+id/textoEnemigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ha aparecido un enemigo, quieres pelear?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenEnemigo"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/pelear"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="pelear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/continuar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoEnemigo" />
+
+    <Button
+        android:id="@+id/continuar2"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="continuar"
+        app:layout_constraintStart_toEndOf="@+id/pelear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoEnemigo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

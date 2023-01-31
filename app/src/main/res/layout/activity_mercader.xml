@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ejercicio10.Mercader">
 
+    <ImageView
+        android:id="@+id/imagenMercader"
+        android:layout_width="316dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/mercader" />
+
+    <TextView
+        android:id="@+id/textoMercader"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tienes la oportunidad de comerciar con un mercader. Deseas hacerlo?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenMercader"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/comerciar"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="comerciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/continuar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoMercader" />
+
+    <Button
+        android:id="@+id/continuar3"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comerciar"
+        app:layout_constraintTop_toBottomOf="@+id/textoMercader" />
 </androidx.constraintlayout.widget.ConstraintLayout>
